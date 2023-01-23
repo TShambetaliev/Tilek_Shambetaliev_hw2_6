@@ -2,16 +2,17 @@ package com.example.tilek_shambetaliev_hw2_6;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,13 +38,12 @@ public class MainActivity extends AppCompatActivity {
                     vypolnitevhod.animate().alpha(0).setDuration(1000);
                     vhod.animate().alpha(0).setDuration(1000);
                     Toast.makeText(MainActivity.this, "Вы успешно зарегистрировались",
-                            Toast.LENGTH_LONG).show();
+                            Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(MainActivity.this, "Неправильный логин или пароль",
-                            Toast.LENGTH_LONG).show();
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });
-
     }
     }

@@ -75,7 +75,7 @@
         app:cornerRadius="8dp"
         android:text="ВОЙТИ"
         android:textStyle="bold"
-        android:backgroundTint="@color/orange"
+        android:backgroundTint="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

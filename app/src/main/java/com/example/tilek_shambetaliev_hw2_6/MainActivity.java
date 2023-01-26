@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence cS1, int start, int before, int count) {
-                if (login.getText().toString().isEmpty()){
+                if (login.getText().toString().isEmpty() && password.getText().toString().isEmpty()){
                     voyti.setBackgroundColor(ContextCompat.getColor(MainActivity.this,R.color.gray));
                 } else {
                     voyti.setBackgroundColor(ContextCompat.getColor(MainActivity.this,R.color.orange));
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence cS1, int start, int before, int count) {
-                if (password.getText().toString().isEmpty()) {
+                if (password.getText().toString().isEmpty())  {
                     voyti.setBackgroundColor(ContextCompat.getColor(MainActivity.this,R.color.gray));
                 } else {
                     voyti.setBackgroundColor(ContextCompat.getColor(MainActivity.this,R.color.orange));
